@@ -66,7 +66,7 @@ export default function MovieDetails({
       year,
       poster,
       imdbRating: Number(imdbRating),
-      runtime: runtime && runtime.split(' ').at(0),
+      runtime: runtime && Number(runtime.split(' ').at(0)),
       userRating,
       countUserRating: countRef.current,
     }
