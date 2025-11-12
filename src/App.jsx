@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { NavBar, Logo, Search, NumResults } from './components/NavBar'
 import WatchedList from './components/WatchedList'
 import MovieDetails from './components/MovieDetails'
@@ -17,7 +17,6 @@ export default function App() {
   //   const storedData = JSON.parse(localStorage.getItem('watched'))
   //   return storedData
   // })
-
 
   const [query, setQuery] = useState('')
   const [selectedId, setSelectedId] = useState(null)
